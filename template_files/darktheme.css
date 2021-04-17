@@ -1,0 +1,149 @@
+body {
+    font-family: 'Cabin', sans-serif;
+    /* background-color: rgba(35,39,42,1); */
+    /* background-color: rgb(36, 37, 38); */
+    background-color: #1c1e21;
+}
+
+@font-face {
+    font-family: 'Cascadia Code Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Cascadia Code Regular'), url('Cascadia.woff') format('woff');
+}
+
+::selection {
+    background-color: rgba(256, 256, 256, 0.1);
+}
+
+.navbar {
+    /* background-color: #23272A !important; */
+    /* background-color: rgba(35, 39, 42, 1) !important; */
+    background-color: rgb(36, 37, 38) !important;
+    /* background-color: rgba(44, 47, 51, 1) !important; */
+    color: #f2f2f2 !important;
+}
+
+.nav-bottom-container {
+    background-color: rgb(36, 37, 38) !important;
+}
+
+.rounded-icon>span {
+    border-radius: 50% !important;
+}
+
+.nav-link {
+    color: #f2f2f2;
+    border-radius: 50%;
+    font-size: 1.2em;
+}
+
+.nav-link:hover {
+    background-color: rgba(256, 256, 256, 0.2);
+    color: #f2f2f2;
+    border-radius: 5px;
+}
+
+.navactive {
+    background-color: rgba(256, 256, 256, 0.2);
+    color: #f2f2f2;
+    border-radius: 5px;
+}
+
+.fai {
+    font-size: 1.3em;
+}
+
+.navbar-desiprogrammer{
+    color: #f2f2f2;
+    font-weight: 500;
+}
+
+.theme-btn {
+    background-color: #eeeeee;
+}
+
+.Sharebutton {
+    background-color: #09c372;
+}
+
+h1 {
+    color: #7289DA;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+p {
+    color: #8395a7;
+    font-size: 1.4em;
+}
+
+::selection {
+    background-color: #09c372;
+    color: #eeeeee;
+}
+
+::-moz-selection {
+    background-color: #09c372;
+}
+
+h2, h3 {
+    font-weight: 700;
+    color: #c8d6e5;
+    font-size: 2.4em;
+}
+
+hr {
+    border-top: 2px dashed #cccccc;
+}
+
+pre, code {
+    font-family: 'Cascadia Code Regular', sans-serif;
+    font-size: 1.4em;
+}
+
+.key {
+    color: #ffdd59;
+}
+
+.note {
+    background-color: #464646;
+}
+
+.card {
+    background: #282c34;
+    color: #7289DA;
+    border: none;
+    transition: 200ms ease-in all;
+}
+
+.card:hover {
+    background-color: #1c1e21;
+}
+
+footer {
+    background-color: rgb(36, 37, 38) !important;
+}
+
+/* styles for browser window 600ps or smaller  */
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 2.4em;
+    }
+    h2, h3 {
+        font-size: 1.6em;
+    }
+    p {
+        font-size: 1.2em;
+    }
+    .nav-link:hover {
+        background-color: transparent;
+        color: #f2f2f2;
+        border-radius: 5px;
+    }
+    pre, code {
+        font-family: 'Cascadia Code Regular', sans-serif;
+        font-size: 1.2em;
+    }
+}

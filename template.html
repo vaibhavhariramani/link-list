@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)https://desiprogrammer.com/blogs/flutter-pdf -->
+<html lang="en" data-xadprotection="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+
+    <meta name="title" content="Vaibhav's Portfolio Templates">
+    <meta name="description" content="A Webpage from Vaibhav Hariramani portfolio template sample">
+    <meta name="keywords" content="Vaibhav Hariramani,desiprogrammer,Vaibhav Hariramani flutter,Vaibhav Hariramani github, Vaibhav Hariramani gitlab, desiprogrammer facebook,desiprogrammer website, Vaibhav Hariramani github,Vaibhav Hariramani flutter,flutter local notifications,flutter local notifications tutorial,flutter local notifications github,flutter local notification schedule,flutter local notification example,flutter local notifications background,flutter local notifications not working,flutter local notification icon,flutter local notification schedule not working,flutter local notification sound,flutter local notification plugin,flutter local notification on click,flutter android local notification,flutter local notification background,flutter local notifications buttons,flutter local notification click,custom local notification flutter,flutter local notifications example,flutter local push notifications,flutter notifications without firebase,flutter notifications push,flutter notifications icon,flutter notifications ui,flutter notifications tutorial,flutter notifications permission,flutter notifications sound,flutter notification local,flutter notification api,flutter notification action,flutter notification app closed,flutter notification alert,flutter android notifications,flutter firebase notifications android,flutter push notifications android,flutter notifications badge,">
+    <meta name="robots" content="index, follow">
+    
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="5 days">
+    <meta name="author" content="Vaibhav Hariramani">
+
+    <meta property="og:title" content="Vaibhav's Portfolio Templates">
+    <meta property="og:description" content="A Webpage from Vaibhav Hariramani portfolio template sample.">
+    <meta property="og:image" content="http://desiprogrammer.com/static/metaImages/flutter-pdf.png">
+    <meta property="og:url" content="https://desiprogrammer.com/blogs/flutter-pdf">
+    <meta property="og:image:secure_url" content="http://desiprogrammer.com/static/metaImages/flutter-pdf.png">
+    <meta property="g:image:type" content="image/png">
+    <meta property="og:site_name" content="Vaibhav Hariramani">
+
+    <meta name="twitter:title" content="Vaibhav's Portfolio Templates">
+    <meta name="twitter:description" content="A Blog from Vaibhav Hariramani about using and setting up the flutter local notification plugin to show instant and scheduled push notification in flutter without using any cloud messaging service like firebase cloud messaging or so. This will work or offline devices too.">
+    <meta name="twitter:image" content="http://desiprogrammer.com/static/metaImages/flutter-pdf.png">
+    <meta name="twitter:card" content="http://desiprogrammer.com/static/metaImages/flutter-pdf.png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:updated_time" content="1440432930">
+    <meta name="theme-color" content="#23272a">
+
+
+    <link rel="shortcut icon" href="https://desiprogrammer.com/static/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://desiprogrammer.com/static/favicon.ico" type="image/x-icon">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaibhav's Portfolio Templates</title>
+    <link rel="stylesheet" href="./template_files/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link href="./template_files/css2" rel="stylesheet">
+    <link rel="stylesheet" href="./template_files/atom-one-dark.css">
+
+    <link id="theme" rel="stylesheet" href="./template_files/darktheme.css">
+    <script>
+        var mode = localStorage.getItem('mode');
+        if (mode) {
+            const themeStylesheet = document.getElementById('theme');
+            if (mode == "light") {
+                themeStylesheet.href = './template_files/lighttheme.css';
+            } else {
+                themeStylesheet.href = './template_files/darktheme.css';
+            }
+        }
+    </script>
+
+
+
+
+<style></style><style>._3emE9--dark-theme .-S-tR--ff-downloader{background:rgba(30,30,30,.93);border:1px solid rgba(82,82,82,.54);box-shadow:0 4px 7px rgba(30,30,30,.55);color:#fff}._3emE9--dark-theme .-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn{background:#3d4b52}._3emE9--dark-theme .-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn:hover{background:#131415}._3emE9--dark-theme .-S-tR--ff-downloader ._10vpG--footer{background:rgba(30,30,30,.93)}._2mDEx--white-theme .-S-tR--ff-downloader{background:#fff;border:1px solid rgba(82,82,82,.54);box-shadow:0 4px 7px rgba(30,30,30,.55);color:#314c75}._2mDEx--white-theme .-S-tR--ff-downloader ._6_Mtt--header{font-weight:700}._2mDEx--white-theme .-S-tR--ff-downloader ._2dFLA--container ._2bWNS--notice{border:0;color:rgba(0,0,0,.88)}._2mDEx--white-theme .-S-tR--ff-downloader ._10vpG--footer{background:#fff}.-S-tR--ff-downloader{display:block;overflow:hidden;position:fixed;bottom:20px;right:7.1%;width:330px;height:180px;background:rgba(30,30,30,.93);border-radius:2px;color:#fff;z-index:99999999;border:1px solid rgba(82,82,82,.54);box-shadow:0 4px 7px rgba(30,30,30,.55);transition:.5s}.-S-tR--ff-downloader._3M7UQ--minimize{height:62px}.-S-tR--ff-downloader._3M7UQ--minimize .nxuu4--file-info,.-S-tR--ff-downloader._3M7UQ--minimize ._6_Mtt--header{display:none}.-S-tR--ff-downloader ._6_Mtt--header{padding:10px;font-size:17px;font-family:sans-serif}.-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn{float:right;background:#f1ecec;height:20px;width:20px;text-align:center;padding:2px;margin-top:-10px;cursor:pointer}.-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn:hover{background:#e2dede}.-S-tR--ff-downloader ._13XQ2--error{color:red;padding:10px;font-size:12px;line-height:19px}.-S-tR--ff-downloader ._2dFLA--container{position:relative;height:100%}.-S-tR--ff-downloader ._2dFLA--container .nxuu4--file-info{padding:6px 15px 0;font-family:sans-serif}.-S-tR--ff-downloader ._2dFLA--container .nxuu4--file-info div{margin-bottom:5px;width:100%;overflow:hidden}.-S-tR--ff-downloader ._2dFLA--container ._2bWNS--notice{margin-top:21px;font-size:11px}.-S-tR--ff-downloader ._10vpG--footer{width:100%;bottom:0;position:absolute;font-weight:700}.-S-tR--ff-downloader ._10vpG--footer ._2V73d--loader{-webkit-animation:n0BD1--rotation 3.5s linear forwards;animation:n0BD1--rotation 3.5s linear forwards;position:absolute;top:-120px;left:calc(50% - 35px);border-radius:50%;border:5px solid #fff;border-top-color:#a29bfe;height:70px;width:70px;display:flex;justify-content:center;align-items:center}.-S-tR--ff-downloader ._10vpG--footer ._24wjw--loading-bar{width:100%;height:18px;background:#dfe6e9;border-radius:5px}.-S-tR--ff-downloader ._10vpG--footer ._24wjw--loading-bar ._1FVu9--progress-bar{height:100%;background:#8bc34a;border-radius:5px}.-S-tR--ff-downloader ._10vpG--footer ._2KztS--status{margin-top:10px}.-S-tR--ff-downloader ._10vpG--footer ._2KztS--status ._1XilH--state{float:left;font-size:.9em;letter-spacing:1pt;text-transform:uppercase;width:100px;height:20px;position:relative}.-S-tR--ff-downloader ._10vpG--footer ._2KztS--status ._1jiaj--percentage{float:right}</style>
+
+<style>
+body {margin:0;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+</style>
+</head>
+
+<body>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+    <!-- ===== navbar ====  -->
+<nav class="navbar navbar-expand-lg bg-light py-3">
+    <a class="navbar-brand pl-2" href="https://desiprogrammer.com/">
+        <img src="./template_files/dp.svg" alt="" width="36"> <span class="d-inline-block d-md-none px-2 navbar-desiprogrammer">Desi
+            Programmer</span>
+    </a>
+    <a class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="0.8em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1280">
+                <path d="M1024 448q0 26-19 45L557 941q-19 19-45 19t-45-19L19 493Q0 474 0 448t19-45t45-19h896q26 0 45 19t19 45z" fill="#c7c7c7"></path>
+                <rect x="0" y="0" width="1024" height="1280" fill="rgba(0, 0, 0, 0)"></rect></svg> </span>
+    </a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link py-3 px-4 mx-2" href="https://desiprogrammer.com/contact">Contact</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item dropdown">
+                <a href="https://desiprogrammer.com/courses" class="nav-link py-3 px-4 mx-2"> Courses </a>
+            </li>
+            <li class="nav-item">
+                <a href="https://desiprogrammer.com/blogs" class="nav-link py-3 px-4 mx-2"> Blogs </a>
+            </li>
+            <li class="nav-item">
+                <a href="https://desiprogrammer.com/support" class="nav-link py-3 px-4 mx-2"> Support </a>
+            </li>
+            <li class="nav-item">
+                <a href="https://desiprogrammer.com/more" class="nav-link py-3 px-4 mx-2"> More </a>
+            </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item">
+                <a class="active" href="#">Portfolio Templates</a>
+            </li>
+            <li class="nav-item">
+                <a href="#news">About</a>
+                </li>
+            <li class="nav-item">
+                <a href="#contact">Contact</a>
+                </li>
+            <li class="nav-item">
+                <a href="#about">Other Links</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link rounded-icon px-3" target="_blank" href="https://twitter.com/vaibhavhariram2"><img width="36" src="./template_files/twitter.svg" alt=""></a> 
+                </li>
+            <li class="nav-item">
+            <a class="nav-link rounded-icon px-3" target="_blank" href="https://www.facebook.com/jayesh.hariramani.3"><img width="36" src="./template_files/facebook.svg" alt="Facebook Logo"></a> 
+            </li>
+            <li class="nav-item">
+            <a class="nav-link rounded-icon px-3" target="_blank" href="https://www.instagram.com/geeky_bawa_/"><img width="36" src="./template_files/instagram.svg" alt="Instagram Logo"></a> 
+            </li>
+            <li class="nav-item">
+            <a class="nav-link rounded-icon px-3" target="_blank" href="https://www.youtube.com/channel/UCy7amUpLnsRLEMIaJGGBYog?sub_confirmation=1"><img width="36" src="./template_files/yt.svg" alt=""></a> 
+            </li>
+            <li class="nav-item">
+            <a class="nav-link rounded-icon px-3" target="_blank" href="https://www.youtube.com/channel/UCXxjFKZ8-25Qn3DzvMJ_arA?sub_confirmation=1"><img width="36" src="./template_files/yt.svg" alt=""></a> 
+            </li>
+            <li class="nav-item">
+            <a class="nav-link rounded-icon px-3" target="_blank" href="https://github.com/vaibhavhariaramani"> <img width="36" src="./template_files/github.svg" alt="Github Logo"></a>
+            </li>
+        </ul>
+
+    </div>
+
+
+
+</nav>
+
+
+
+
+<div class="container-fluid nav-bottom-container">
+    <div class="row justify-content-center no-gutters">
+        <div class="col-2 col-md-auto">
+            GET CONNECTED
+        </div>
+        
+        <div class="col-2 col-md-auto">
+            <a class="nav-link rounded-icon px-3" target="_blank" href="https://twitter.com/vaibhavhariram2"><img width="36" src="./template_files/twitter.svg" alt=""></a> <a class="nav-link rounded-icon px-3" target="_blank" href="https://www.facebook.com/jayesh.hariramani.3"><img width="36" src="./template_files/facebook.svg" alt="Facebook Logo"></a> <a class="nav-link rounded-icon px-3" target="_blank" href="https://www.instagram.com/geeky_bawa_/"><img width="36" src="./template_files/instagram.svg" alt="Instagram Logo"></a> <a class="nav-link rounded-icon px-3" target="_blank" href="https://www.youtube.com/channel/UCy7amUpLnsRLEMIaJGGBYog?sub_confirmation=1"><img width="36" src="./template_files/yt.svg" alt=""></a> <a class="nav-link rounded-icon px-3" target="_blank" href="https://www.youtube.com/channel/UCXxjFKZ8-25Qn3DzvMJ_arA?sub_confirmation=1"><img width="36" src="./template_files/yt.svg" alt=""></a> <a class="nav-link rounded-icon px-3" target="_blank" href="https://github.com/vaibhavhariaramani"> <img width="36" src="./template_files/github.svg" alt="Github Logo">
+        </div>
+        
+        <div class="col-2 col-md-auto">
+            
+        </div>
+        <div class="col-2 col-md-auto">
+            
+        </div>
+        <div class="col-2 col-md-auto">
+            
+            </a>
+        </div>
+        <div class="col-2 col-md-auto">
+            
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- ====  -->
+
+    <!-- ==========  CONTENT ==========  -->
+
+
+    <div class="container">
+        <h1 class="p-2 my-3">Vaibhav's Portfolio Templates
+        </h1>
+        <button class="theme-btn btn mt-2 mb-2" id="theme-toggle">Switch To light Mode 🌞</button>
+
+        <button class="Sharebutton btn d-inline-block d-md-none mt-2 mb-2" id="shareBtn">Share <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-share-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M12.024 3.797L4.499 7.56l-.448-.895 7.525-3.762.448.894zm-.448 9.3L4.051 9.335 4.5 8.44l7.525 3.763-.448.894z"></path>
+                <path fill-rule="evenodd" d="M13.5 5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm0 11a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm-11-5.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"></path>
+            </svg></button>
+
+        <a href="https://www.instagram.com/geeky_bawa_/" class="btn btn-primary mt-2 mb-2" data-size="large" data-show-screen-name="false" data-show-count="false">Follow @geeky_bawa_</a>
+        <script async="" src="./template_files/widgets.js" charset="utf-8"></script>
+
+
+        <hr>
+    </div>
+
+    <!-- // blog content starts here  -->
+
+    <div class="container">
+
+        <h3> Reading PDF Files </h3>
+
+        <p>First, we need to add the following plugins to our pubspec.yaml file And then fetch all the plugins. The
+            <span class="key">pdf_flutter </span> plugin will be used to read and display PDF files. The <span class="key">file_picker</span> plugin will be used to pick a file from the local storage. <br> Now the
+            <span class="key">path_provider</span> plugin and the <span class="key">pdf</span> plugin well together help
+            us in creating and saving a PDF file as path provider plugin will give us a path to save our file and the
+            PDF plugin will help us in creating a PDF file.</p>
+
+        <pre><code class="language-yaml hljs">
+  <span class="hljs-attr">pdf_flutter:</span> <span class="hljs-string">^1.1.3</span>
+  <span class="hljs-attr">file_picker:</span> <span class="hljs-string">^1.13.3</span>
+  
+  <span class="hljs-attr">pdf:</span> <span class="hljs-string">^1.10.1</span>
+  <span class="hljs-attr">path_provider:</span> <span class="hljs-string">^1.6.11</span>
+        </code></pre>
+
+        <p>Working with <span class="key">pdf_flutter</span> is very simple and here are quick examples on how you can
+            open a file from the internet, from the assets or how you can pick a file using the <span class="key">file_picker</span> plugin and then display the file content using PDF plugin.
+            <br> I have allowed only the PDF extension in <span class="key">file_picker</span> to make sure that we
+            don't end up getting errors </p>
+
+
+        <p>To Open a File from internet</p>
+
+        <pre><code class="language-dart hljs">
+  PDF.network(
+      <span class="hljs-comment">// file url</span>
+     <span class="hljs-string">'http://africau.edu/images/default/sample.pdf'</span>,
+     <span class="hljs-comment">// optional height and width</span>
+     height: <span class="hljs-number">600</span>,
+     width: MediaQuery.of(context).size.width * <span class="hljs-number">0.90</span>,
+  ),
+        </code></pre>
+
+        <p>To Open a File from asset</p>
+        <pre><code class="language-dart hljs">
+  PDF.assets(<span class="hljs-string">'assets/dummypdf.pdf'</span>),
+        </code></pre>
+
+        <p>To Open a File from Local Storage</p>
+        <pre><code class="language-dart hljs">
+  <span class="hljs-keyword">import</span> <span class="hljs-string">'dart:io'</span>;
+  <span class="hljs-comment">// declare a File variable</span>
+  File localfile;
+  
+  <span class="hljs-comment">// to view a file only if a file is picked</span>
+  localfile != <span class="hljs-keyword">null</span>
+  ? PDF.file(
+      localfile,
+      height: <span class="hljs-number">600</span>,
+      width: MediaQuery.of(context).size.width * <span class="hljs-number">0.90</span>,
+    )
+  : RaisedButton(
+      child: Text(<span class="hljs-string">"Grab A File"</span>),
+      onPressed: () <span class="hljs-keyword">async</span> {
+        File pickedFile = <span class="hljs-keyword">await</span> FilePicker.getFile(
+            allowedExtensions: [<span class="hljs-string">'pdf'</span>], type: FileType.custom);
+        setState(() {
+          localfile = pickedFile;
+        });
+      },
+    ),
+</code>
+        </pre>
+
+        <h3>Creating PDF Files</h3>
+
+        <p>Let's talk about creating the PDF and to do that we will create a function named <span class="key">generateFile</span> that will use the PDF widgets provided by the <span class="key">pdf</span> plugin to create a PDF file. <br>
+            Here we have a <span class="key">doc</span> variable which is a PDF widget document
+            We will add a page to our PDF document with the page format as A4 and we will build the page. The best part
+            is that the entire page structure can we built using normal flutter widgets the only difference being that
+            they will be provided by the PDF widget. For example we will add a column then a center with some dummy
+            text.
+        </p>
+
+        <pre><code class="language-dart hljs">
+  <span class="hljs-comment">// import the packages</span>
+  <span class="hljs-keyword">import</span> <span class="hljs-string">'package:path_provider/path_provider.dart'</span>;
+  <span class="hljs-keyword">import</span> <span class="hljs-string">'package:pdf/pdf.dart'</span>;
+  <span class="hljs-keyword">import</span> <span class="hljs-string">'package:pdf/widgets.dart'</span> <span class="hljs-keyword">as</span> pw;
+
+  <span class="hljs-comment">// a dcoument variable decalration</span>
+  <span class="hljs-keyword">final</span> doc = pw.Document();
+  
+  <span class="hljs-comment">// the function</span>
+  <span class="hljs-keyword">void</span> generateFile() <span class="hljs-keyword">async</span> {
+   doc.addPage(pw.Page(
+       pageFormat: PdfPageFormat.a4,
+       build: (pw.Context context) {
+         <span class="hljs-keyword">return</span> pw.Column(
+           mainAxisAlignment: pw.MainAxisAlignment.center,
+           children: [
+             pw.Center(
+               child: pw.Text(<span class="hljs-string">"Dummy PDF"</span>,
+                   style: pw.TextStyle(
+                     fontSize: <span class="hljs-number">50.0</span>, 
+                   ),
+                ),
+             ),
+           ],
+         ); 
+       }
+    ),
+  ); 
+            
+        </code></pre>
+
+        <p>Then we have to save our document. <br> For that, First we will get the getExternalStorageDirectory path and
+            will add a filename to that. We will then use <span class="key">File</span> to create file at that path and
+            will save the <span class="key">doc</span> and will write that to our file. <br> I will simply print the pdf
+            path so that you can go and check if the file exists there. </p>
+
+        <pre><code class="language-dart hljs">
+  <span class="hljs-keyword">final</span> outPut = <span class="hljs-keyword">await</span> getExternalStorageDirectory();
+
+  <span class="hljs-built_in">String</span> path = outPut.path + <span class="hljs-string">'/example.pdf'</span>;
+  <span class="hljs-keyword">final</span> file = File(path);
+  file.writeAsBytesSync(doc.save());
+  
+  <span class="hljs-built_in">print</span>(outPut.path);
+        </code></pre>
+
+        <p class="key" div="solution">If You face Errror In Release <a href="https://github.com/erluxman/pdf_flutter/issues/4#issuecomment-684108676" target="_blank">Follow
+                This.</a> </p>
+
+    </div>
+
+    <!-- +++++ FOOTER +++++   -->
+    <footer class="text-center p-4">
+        <p class="">Copyright © 2020 | Vaibhav Hariramani</p>
+        <p>Found Any Issue ? <a class="text-link" href="https://desiprogrammer.com/bugs"> <span class="key">Report A Bug 🕷</span></a></p>
+        <div class="row no-gutters justify-content-center">
+            <div class="col-auto">
+                <a href="https://www.youtube.com/c/desiprogrammer"><img src="./template_files/yt.svg" width="36" alt="Youtube Icon"></a>
+            </div>
+            <div class="col-auto">
+                <a href="https://www.instagram.com/desiprogrammer/"><img src="./template_files/instagram.svg" width="36" alt="Instagram Icon"></a>
+            </div>
+            <div class="col-auto">
+                <a href="https://github.com/desi-programmer"><img src="./template_files/github.svg" width="36" alt="Github Icon"></a>
+            </div>
+        </div>
+        <p> <a href="https://desiprogrammer.com/terms">Terms Of Service</a> | <a href="https://desiprogrammer.com/policy">Privacy Policy</a> </p>
+    </footer>
+    <!-- +++++ FOOTER +++++   -->
+
+    <script src="./template_files/highlight-dart.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // localStorage.setItem('mode','dark');
+
+            const themeStylesheet = document.getElementById('theme');
+            const themeToggle = document.getElementById('theme-toggle');
+            themeToggle.addEventListener('click', () => {
+                // if it's light -> go dark
+                if (themeStylesheet.href.includes('light')) {
+                    themeStylesheet.href = '/static/blogStyles/darktheme.css';
+                    themeToggle.innerText = 'Switch to light mode 🌞';
+                    localStorage.setItem('mode', 'dark');
+                } else {
+                    // if it's dark -> go light
+                    themeStylesheet.href = '/static/blogStyles/lighttheme.css';
+                    themeToggle.innerText = 'Switch to dark mode 🌚';
+                    localStorage.setItem('mode', 'light');
+
+                }
+            })
+        })
+
+        const shareData = {
+            title: 'Flutter PDF - Create Pdf and Read From Internet, Storage or Asset',
+            text: 'A blog explaining how to read and view PDF files in a Flutter application and also how to create and render BLog files',
+            url: 'https://desiprogrammer.in/blogs/flutter-pdf',
+        };
+
+
+        var shareBtn = document.getElementById('shareBtn');
+
+        shareBtn.addEventListener('click', () => {
+            if (navigator.share) {
+                navigator.share(shareData);
+            } else {
+
+            }
+        });
+    </script>
+
+    <script src="./template_files/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="./template_files/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+
+
+<iframe scrolling="no" frameborder="0" allowtransparency="true" src="./template_files/widget_iframe.96fd96193cc66c3e11d4c5e4c7c7ec97.html" title="Twitter settings iframe" style="display: none;"></iframe><iframe frameborder="0" scrolling="no" style="background-color: transparent; border: 0px; display: none;" src="./template_files/saved_resource.html"></iframe><div id="GOOGLE_INPUT_CHEXT_FLAG" input="" input_stat="{&quot;tlang&quot;:true,&quot;tsbc&quot;:true,&quot;pun&quot;:true,&quot;mk&quot;:true,&quot;ss&quot;:true}" style="display: none;"></div><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe" src="./template_files/saved_resource(1).html"></iframe></body></html>
